@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1>MR.KITTAYOCH ONGUN</h1>
+                <h3><p>กรอกคะแนน (0-100) : <input type="text" id="score"> <button class="btn btn-primary"
+                        onclick="grade()">ตัดเกรด</button></p>
+                
+                    <p id="result"></p>
+                </h3>
+
+                <h3>การตัดเกรดแบบ 8 เกรดจะแบ่งช่วงคะแนนดังนี้</h3>
+                <table id="grade1">
+                    <tr>
+                        <td>80-100</td>
+                        <td>คะแนน</td>
+                        <td>เกรด A</td>
+                    </tr>
+                    <tr>
+                        <td>75-79</td>
+                        <td>คะแนน</td>
+                        <td>เกรด B+</td>
+                    </tr>
+                    <tr>
+                        <td>70-74</td>
+                        <td>คะแนน</td>
+                        <td>เกรด B</td>
+                    </tr>
+                    <tr>
+                        <td>65-69</td>
+                        <td>คะแนน</td>
+                        <td>เกรด C+</td>
+                    </tr>
+                    <tr>
+                        <td>60-64</td>
+                        <td>คะแนน</td>
+                        <td>เกรด C</td>
+                    </tr>
+                    <tr>
+                        <td>55-59</td>
+                        <td>คะแนน</td>
+                        <td>เกรด D+</td>
+                    </tr>
+                    <tr>
+                        <td>50-54</td>
+                        <td>คะแนน</td>
+                        <td>เกรด D</td>
+                    </tr>
+                    <tr>
+                        <td>0-49</td>
+                        <td>คะแนน</td>
+                        <td>เกรด E </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+</body>
+<script>
+    function grade() {
+        var score = document.getElementById("score").value;
+        var result = document.getElementById("result");
+
+        if (score >= 80 && score <= 100) {
+            result.innerHTML = "เกรด A";
+        } else if (score >= 75 && score <= 79) {
+            result.innerHTML = "เกรด B+";
+        } else if (score >= 70 && score <= 74) {
+            result.innerHTML = "เกรด B";
+        } else if (score >= 65 && score <= 69) {
+            result.innerHTML = "เกรด C+";
+        } else if (score >= 60 && score <= 64) {
+            result.innerHTML = "เกรด C";
+        } else if (score >= 55 && score <= 59) {
+            result.innerHTML = "เกรด D+";
+        } else if (score >= 50 && score <= 54) {
+            result.innerHTML = "เกรด D";
+        } else if (score >= 0 && score <= 49) {
+            result.innerHTML = "เกรด E เรียบร้อยมึงไม่ผ่าน555";
+        } else {
+            result.innerHTML = "คะแนนเกินกำหนด";
+        }
+    }
+</script>
+
+</html>

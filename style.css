@@ -1,0 +1,44 @@
+body {
+    text-align: center;
+    font-family: 'Itim', cursive;
+    background-image: url(https://i.pinimg.com/originals/2d/44/e9/2d44e965dff94b7aa7a51fb42f25faf8.gif);
+}
+
+#grade1 {
+    font-family: 'Itim', cursive;
+    border-collapse: collapse;
+    width: 100%;
+  
+}
+
+#grade1 td,
+#grade1 th {
+    border: 2px solid #ddd;
+    padding: 8px;
+    
+}
+
+#grade1 tr:nth-child(even) {
+    background-color: #eeaa18;
+}
+
+#grade1 tr {
+    background-color: rgb(111, 212, 230);
+}
+
+#grade1 th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #04AA6D;
+    color: white;
+    
+}
+h1{
+   
+    font-family: 'Itim', cursive;
+    text-align: center;
+}
+h3{
+    text-align: center;
+}
